@@ -23,7 +23,7 @@ Users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 
 Mobile Layout:
-****
+
 ![Mobile LAyout](./assets/images/mobile-layout.jpg)
 
 Desktop Layout:
