@@ -1,0 +1,70 @@
+@use 'variables';
+
+.card-wrapper{
+    width: 21.375rem;  
+    position: relative;  
+    background-color: variables.$darkGrayishBlue;
+    border-radius: .625rem;
+    padding: 2.5rem 1.875rem 4rem;
+    margin: 5rem auto;
+    text-align: center;
+    & h1{
+        font-size: .75rem;
+        text-transform: uppercase;
+        color: variables.$neonGreen;
+        margin-bottom: 1.5rem;
+        letter-spacing: .25rem;
+        text-align: center;
+    }
+    & #advice{
+        font-size: 1.375rem;
+        font-weight: 800;
+        color: variables.$lightCyan;
+        margin-bottom: 1.5rem;
+    }
+    & picture{
+        display: flex;
+        flex-direction: column
+    }
+    
+    & .dice__button{
+        background-color: variables.$neonGreen;
+        width: 4.125rem;
+        height: 4.125rem;
+        border-radius: 3.125rem;
+        border: none;
+        display: grid;
+        place-content: center;
+        position: absolute;
+        left: 8.6875rem;
+        bottom: -2.0625rem;
+        cursor: pointer;
+        
+    }
+    & .dice__button:hover{
+        filter: drop-shadow(0 0 1rem variables.$neonGreen);
+    }
+    @media (min-width:48rem) {
+        width: 33.75rem;
+        & .dice__button{
+            left: 14.8125rem;
+        }
+    }
+    @media (min-width:64rem) {
+        width: 48rem;
+        & h1{
+            font-size: 1.375rem;
+        }
+        & #advice{
+            font-size: 3.25rem;
+        }
+        
+        & .dice__button{
+            width: 4.75rem;
+            height: 4.75rem;
+            left: 21.625rem;
+            bottom: -2.375rem;
+        }
+    }
+    
+}

@@ -1,0 +1,109 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 28px;
+  font-family: "Manrope";
+  background-color: hsl(218, 23%, 16%);
+  margin: 0 auto;
+}
+@media (min-width: 48rem) {
+  body {
+    height: 56.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+.card-wrapper {
+  width: 21.375rem;
+  position: relative;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 0.625rem;
+  padding: 2.5rem 1.875rem 4rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+.card-wrapper h1 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+.card-wrapper #advice {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 1.5rem;
+}
+.card-wrapper picture {
+  display: flex;
+  flex-direction: column;
+}
+.card-wrapper .dice__button {
+  background-color: hsl(150, 100%, 66%);
+  width: 4.125rem;
+  height: 4.125rem;
+  border-radius: 3.125rem;
+  border: none;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  left: 8.6875rem;
+  bottom: -2.0625rem;
+  cursor: pointer;
+}
+.card-wrapper .dice__button:hover {
+  filter: drop-shadow(0 0 1rem hsl(150, 100%, 66%));
+}
+@media (min-width: 48rem) {
+  .card-wrapper {
+    width: 33.75rem;
+  }
+  .card-wrapper .dice__button {
+    left: 14.8125rem;
+  }
+}
+@media (min-width: 64rem) {
+  .card-wrapper {
+    width: 48rem;
+  }
+  .card-wrapper h1 {
+    font-size: 1.375rem;
+  }
+  .card-wrapper #advice {
+    font-size: 3.25rem;
+  }
+  .card-wrapper .dice__button {
+    width: 4.75rem;
+    height: 4.75rem;
+    left: 21.625rem;
+    bottom: -2.375rem;
+  }
+}
+
+.attribution {
+  font-size: 0.39em;
+  margin: 0 auto;
+  color: hsl(193, 38%, 86%);
+  text-align: center;
+  font-weight: 800;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(150, 100%, 66%);
+}
+
+/*# sourceMappingURL=style.css.map */
